@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>제주 관광 안내 - 홈</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="header">
+    <!-- Header -->
+    <h1 class="header__title">제주 관광 안내</h1>
+    <nav class="navigation">
+      <!-- Navigation -->
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="index.html">홈</a></li>
+        <li class="navigation__item"><a href="attractions.html">관광지 목록</a></li>
+        <li class="navigation__item"><a href="courses.html">코스 목록</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main main--home">
+    <section class="home-hero">
+      <h2>제주 여행, 지금 계획해보세요</h2>
+      <input
+        type="search"
+        class="search-box home-search-box"
+        placeholder="관광지 이름이나 설명으로 검색"
+        aria-label="관광지 검색"
+      />
+    </section>
+
+    <section class="home-section">
+      <h2>인기 관광지</h2>
+      <div class="attraction-list home-attraction-list"></div>
+    </section>
+
+    <section class="home-section">
+      <h2>추천 코스</h2>
+      <div class="course-list home-course-list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <!-- Footer -->
+  </footer>
+
+  <script src="js/utils/markdownParser.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

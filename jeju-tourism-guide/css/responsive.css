@@ -1,0 +1,55 @@
+/* 반응형 레이아웃 */
+
+/* 모바일: 1열 레이아웃 */
+@media (max-width: 640px) {
+  .header {
+    padding: 0 1rem;
+  }
+
+  .navigation__list {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .search-box {
+    max-width: 100%;
+  }
+
+  .category-filter {
+    flex-wrap: wrap;
+  }
+
+  .category-filter__button {
+    min-height: 44px;
+    padding: 0.5rem 1rem;
+  }
+
+  .attraction-list,
+  .course-list {
+    grid-template-columns: 1fr;
+  }
+
+  .course-item__header {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+}
+
+/* 태블릿: 2열 레이아웃 */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .attraction-list,
+  .course-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 데스크톱: 3열 이상 레이아웃 */
+@media (min-width: 1025px) {
+  .attraction-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .course-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

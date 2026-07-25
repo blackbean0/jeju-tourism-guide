@@ -1,0 +1,197 @@
+/* 컴포넌트 스타일 (Header, Navigation, AttractCard, CourseCard, Footer 등) */
+
+.home-hero {
+  margin-bottom: 2rem;
+}
+
+.home-section {
+  margin-bottom: 2rem;
+}
+
+.search-box {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  padding: 0.5rem 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.category-filter {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.category-filter__button {
+  padding: 0.4rem 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.category-filter__button.is-active {
+  background: #333;
+  border-color: #333;
+  color: #fff;
+}
+
+.attraction-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.attraction-card {
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.attraction-card__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.attraction-card__summary {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.attraction-list__empty {
+  grid-column: 1 / -1;
+  color: #777;
+}
+
+.attraction-detail__category {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: #eee;
+  font-size: 0.85rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.attraction-detail__info {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.attraction-detail__info li {
+  margin-bottom: 0.3rem;
+}
+
+.attraction-detail__description {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.attraction-detail__tips {
+  padding-left: 1.2rem;
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.course-card {
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.course-card__title {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+}
+
+.course-card__duration {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: #eee;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.course-card__theme {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.course-detail__duration {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: #eee;
+  font-size: 0.85rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.course-detail__theme {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.course-day {
+  margin-bottom: 1.5rem;
+}
+
+.course-day__title {
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.3rem;
+}
+
+.course-period {
+  margin: 0.8rem 0;
+}
+
+.course-period__title {
+  margin: 0 0 0.4rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.course-period__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.course-item {
+  padding: 0.6rem 0;
+  border-top: 1px solid #eee;
+}
+
+.course-item__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.course-item__time {
+  color: #777;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.course-item__tip {
+  margin: 0.3rem 0 0;
+  font-size: 0.9rem;
+  color: #555;
+}
